@@ -6,6 +6,14 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## Changelog Patch [0.0.3] - 2023-08-19 - Fixed issue with changelog meta file and samples folder
+### Added
+-Changelog meta file
+### Modidied
+-Changelog
+    --Updates samples path
+
+
 ## Samples Patch [0.0.2] - 2023-08-19 - Introduced a samples folder for testing
 ### Added
 -Samples
