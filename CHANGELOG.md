@@ -6,6 +6,13 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## Samples assembly fix [0.0.5] - 2023-08-19 - Created assembly definitions in child folder
+### Modified
+-FrozenPhoenixExamples
+    --UIExamples
+        --Created assembly definitions
+
+
 ## Samples hot fix [0.0.4] - 2023-08-19 - Rearranged samples folder and added Assembly Definition to allow example scripts to work
 ### Modified
 -Samples

@@ -1,8 +1,7 @@
 {
-    "name": "FrozenPhoenixTypeWriterAssDef",
+    "name": "FrozenPhoenix_Route_AssemblyDefinition",
     "rootNamespace": "",
     "references": [
-        "GUID:ebcae22a90aa419499035e074d7881b1",
         "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
