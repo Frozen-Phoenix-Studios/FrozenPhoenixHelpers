@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     /// <summary>
     /// Create a top level parent game object under your canvas

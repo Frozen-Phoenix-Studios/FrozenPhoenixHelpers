@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     public class SpawnPoint : MonoBehaviour
     {

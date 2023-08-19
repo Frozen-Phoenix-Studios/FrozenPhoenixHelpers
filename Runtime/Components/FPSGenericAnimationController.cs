@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     [AddComponentMenu("FrozenPhoenixStudios/Components/FPS Generic Animation Controller")]
     public class FPSGenericAnimationController : FPSAnimationControllerBase

@@ -1,6 +1,6 @@
 using System;
 
-namespace FrozenPhoenixStudios.Utilities
+namespace FrozenPhoenix.Utilities
 {
     public static class ConversionMethods
     {

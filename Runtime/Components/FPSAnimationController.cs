@@ -1,8 +1,8 @@
 ﻿using System;
-using FrozenPhoenixStudios.Utilities;
+using FrozenPhoenix.Utilities;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
 
     public abstract class FPSAnimationControllerBase : MonoBehaviour

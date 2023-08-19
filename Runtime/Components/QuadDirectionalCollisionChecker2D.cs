@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     public class QuadDirectionalCollisionChecker2D : MonoBehaviour
     {

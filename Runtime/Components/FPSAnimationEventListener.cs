@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     [AddComponentMenu("FrozenPhoenixStudios/Components/FPSAnimationEventListener")]
     public abstract class FPSAnimationEventListenerBase : MonoBehaviour

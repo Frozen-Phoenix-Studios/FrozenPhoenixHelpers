@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-namespace FrozenPhoenixStudios.Utilities.UI
+namespace FrozenPhoenix.Utilities.UI
 {
     public static class UIUtilities
     {

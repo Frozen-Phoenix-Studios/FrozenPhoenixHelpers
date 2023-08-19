@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     public class DestroyAfterTime : MonoBehaviour
     {

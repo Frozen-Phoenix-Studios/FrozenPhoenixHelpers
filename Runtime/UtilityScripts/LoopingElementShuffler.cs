@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Utilities
+namespace FrozenPhoenix.Utilities
 {
     public class LoopingElementShuffler<T> where T : class
     {

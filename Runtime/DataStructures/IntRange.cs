@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FrozenPhoenixStudios.DataStructures
+namespace FrozenPhoenix.DataStructures
 {
     [Serializable]
     public class IntRange

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Utilities
+namespace FrozenPhoenix.Utilities
 {
     public static class HelperMethods
     {

@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/.idea/.gitignore
+/.idea/FrozenPhoenixHelpers.iml
+/.idea/modules.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml

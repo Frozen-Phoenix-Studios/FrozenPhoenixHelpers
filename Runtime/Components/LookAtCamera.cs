@@ -1,7 +1,7 @@
-using FrozenPhoenixStudios.Utilities;
+using FrozenPhoenix.Utilities;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     [AddComponentMenu("FrozenPhoenixStudios/Components/LookAtCamera")]
     public class LookAtCamera : MonoBehaviour

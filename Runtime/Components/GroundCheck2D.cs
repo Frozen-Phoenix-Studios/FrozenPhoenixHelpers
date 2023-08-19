@@ -1,7 +1,7 @@
-using FrozenPhoenixStudios.DataStructures;
+using FrozenPhoenix.DataStructures;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Components
+namespace FrozenPhoenix.Components
 {
     public class GroundCheck2D : MonoBehaviour
     {

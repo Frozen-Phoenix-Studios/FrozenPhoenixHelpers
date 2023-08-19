@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace FrozenPhoenixStudios.Utilities
+namespace FrozenPhoenix.Utilities
 {
     public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {

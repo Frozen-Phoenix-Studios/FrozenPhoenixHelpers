@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace FrozenPhoenixStudios.Audio
+namespace FrozenPhoenix.Audio
 {
     [Serializable]
     public class AudioData
