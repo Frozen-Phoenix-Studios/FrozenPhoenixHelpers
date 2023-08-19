@@ -16,7 +16,7 @@
         {
             "displayName": "Type Writer Effect",
             "description": "Contains a sample scene to show the text type write effect on a TMP_Text object",
-            "path": "Samples~FrozenPhoenixExamples/UIExamples/TypeWriterSample"
+            "path": "Samples~/FrozenPhoenixExamples/UIExamples/TypeWriterSample"
         }
     ]
 }
