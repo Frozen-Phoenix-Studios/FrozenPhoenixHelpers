@@ -1,6 +1,6 @@
 {
     "name":"com.frozenphoenix.frozenphoenixhelpers",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "displayName": "Frozen Phoenix Helpers",
     "description": "A collection of helper scripts and components to help streamline Unity game developement",
     "unity": "2021.3",
@@ -16,7 +16,7 @@
         {
             "displayName": "Type Writer Effect",
             "description": "Contains a sample scene to show the text type write effect on a TMP_Text object",
-            "path": "Samples/TypeWriterSample"
+            "path": "FrozenPhoenixSamples/UIExamples/TypeWriterSample"
         }
     ]
 }

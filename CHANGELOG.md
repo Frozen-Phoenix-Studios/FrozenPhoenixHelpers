@@ -2,9 +2,17 @@
 
 ## Future Changes
 ### Breaking changes
--Organize Components folder **this is a breaking change**
+-Organize Components folder
 -Organize utility scripts
 -Separate out abstract classes
+
+## Samples hot fix [0.0.4] - 2023-08-19 - Rearranged samples folder and added Assembly Definition to allow example scripts to work
+### Modified
+-Samples
+    --Renamed FrozenPhoenixExamples
+    --Moved TypeWriter example into UI examples folder
+### Added
+-Assembly Definition for FrozenPhoenixExamples folder
 
 ## Changelog Patch [0.0.3] - 2023-08-19 - Fixed issue with changelog meta file and samples folder
 ### Added
