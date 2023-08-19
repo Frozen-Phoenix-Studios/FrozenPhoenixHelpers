@@ -2,7 +2,6 @@
     "name": "TestDef",
     "rootNamespace": "",
     "references": [
-        "GUID:9b65cf7b01920df4692b3a69b0acd8b5",
         "GUID:6055be8ebefd69e48b49212b09b47b2f"
     ],
     "includePlatforms": [],
