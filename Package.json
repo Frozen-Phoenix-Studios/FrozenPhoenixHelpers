@@ -11,6 +11,13 @@
         "name": "Luke Duckett",
         "email": "contact@frozenphoenix.com.au",
         "url": "https://frozenphoenix.com.au/"
-    }
+    },
+    "samples":[
+        {
+            "displayName": "Type Writer Effect",
+            "description": "Contains a sample scene to show the text type write effect on a TMP_Text object",
+            "path": "Samples~/TypeWriterSample"
+        }
+    ]
 }
 

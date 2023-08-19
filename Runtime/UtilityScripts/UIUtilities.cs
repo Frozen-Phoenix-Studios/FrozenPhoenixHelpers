@@ -320,7 +320,7 @@ namespace FrozenPhoenix.Utilities.UI
             objectToFlicker.SetActive(objectActiveAtCompletion);
         }
 
-        public static IEnumerator TextTypeWriteEffect(Text textObject, string textToType, float typeSpeed)
+        public static IEnumerator TextTypeWriteEffect(Text textObject, string textToType, float typeSpeedPerLetter)
         {
             textObject.gameObject.SetActive(true);
             for (int i = 0; i < (textToType.Length); i++)
@@ -330,12 +330,11 @@ namespace FrozenPhoenix.Utilities.UI
                 var currentCharacter = textToType.Substring(i, 1);
                 if (currentCharacter != " ")
                 {
-                    yield return new WaitForSeconds(typeSpeed);
+                    yield return new WaitForSeconds(typeSpeedPerLetter);
                 }
             }
         }
-
-        public static IEnumerator TextTypeWriteEffect(TMP_Text textObject, string textToType, float typeSpeed)
+        public static IEnumerator TextTypeWriteEffect(TMP_Text textObject, string textToType, float typeSpeedPerLetter)
         {
             textObject.gameObject.SetActive(true);
             for (int i = 0; i < textToType.Length; i++)
@@ -344,7 +343,7 @@ namespace FrozenPhoenix.Utilities.UI
                 var currentCharacter = textToType.Substring(i, 1);
                 if (currentCharacter != " ")
                 {
-                    yield return new WaitForSeconds(typeSpeed);
+                    yield return new WaitForSeconds(typeSpeedPerLetter);
                 }
             }
         }
