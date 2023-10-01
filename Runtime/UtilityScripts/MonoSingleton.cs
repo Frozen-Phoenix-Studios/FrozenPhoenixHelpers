@@ -6,7 +6,7 @@ namespace FrozenPhoenix.Utilities
     {
         [SerializeField] private bool destroyOnLoad;
 
-        private static T _instance;
+        protected static T _instance;
 
         public static T Instance
         {

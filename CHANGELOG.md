@@ -7,7 +7,12 @@
 -Organize utility scripts
 -Separate out abstract classes
 
-## MonoSingleton changees [0.0.6] - 2023-10-01 - Changed Init method to virtual to prevent empty methods impliemented in manager classes that do not require method
+## MonoSingleton changes pt2 [0.0.7] 2023-10-01 - Changed the instance to proctected instead of private to allow child classes to override the instance type
+### Modified
+-Utility Scripts
+    --MonoSingleton
+        ---Changed _instance variable from private to protected
+## MonoSingleton changes [0.0.6] - 2023-10-01 - Changed Init method to virtual to prevent empty methods impliemented in manager classes that do not require method
 ### Modified
 -Utility Scripts
     --MonoSingleton
