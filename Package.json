@@ -1,6 +1,6 @@
 {
     "name":"com.frozenphoenix.frozenphoenixhelpers",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "displayName": "Frozen Phoenix Helpers",
     "description": "A collection of helper scripts and components to help streamline Unity game developement",
     "unity": "2021.3",
