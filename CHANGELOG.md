@@ -1,10 +1,17 @@
 # Changelog
 
 ## Future Changes
+### Non breaking changes
 ### Breaking changes
 -Organize Components folder
 -Organize utility scripts
 -Separate out abstract classes
+
+## MonoSingleton changees [0.0.6] - 2023-10-01 - Changed Init method to virtual to prevent empty methods impliemented in manager classes that do not require method
+### Modified
+-Utility Scripts
+    --MonoSingleton
+        ---Changed Init method from abstract to virtual
 
 ## Samples assembly fix [0.0.5] - 2023-08-19 - Created assembly definitions in child folder
 ### Modified

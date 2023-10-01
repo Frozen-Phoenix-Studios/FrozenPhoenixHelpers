@@ -21,7 +21,7 @@ namespace FrozenPhoenix.Utilities
             }
         }
 
-        protected void Awake() //todo" this instead should have an init method
+        protected void Awake()
         {
             if (_instance != null)
                 Destroy(gameObject);
@@ -33,7 +33,9 @@ namespace FrozenPhoenix.Utilities
 
         }
 
-        protected abstract void Init();
+        protected virtual void Init()
+        {
+        }
 
 
         private void SetDestroyOnLoadProperty()
