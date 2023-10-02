@@ -6,14 +6,14 @@ namespace FrozenPhoenix.Audio
     [Serializable]
     public class AudioData
     {
-        public AudioType AudioType;
+        public SoundCategory SoundCategory;
         public AudioClip ClipToPlay;
         public Vector2 RandomPitchRange;
         public bool HasRandomPitch => RandomPitchRange != Vector2.zero;
 
-        public AudioData(AudioType audioType, AudioClip clipToPlay, Vector2 randomPitchRange = default)
+        public AudioData(SoundCategory category, AudioClip clipToPlay, Vector2 randomPitchRange = default)
         {
-            AudioType = audioType;
+            SoundCategory = category;
             ClipToPlay = clipToPlay;
             RandomPitchRange = randomPitchRange;
         }
