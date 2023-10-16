@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-namespace FrozenPhoenix.Utilities
+namespace FrozenPhoenix.Utilities 
 {
     public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {
-        [SerializeField] private bool destroyOnLoad;
+        [SerializeField] private bool dontDestroyOnLoad;
 
         protected static T _instance;
 
@@ -40,11 +40,11 @@ namespace FrozenPhoenix.Utilities
 
         private void SetDestroyOnLoadProperty()
         {
-            if (destroyOnLoad)
-                return;
-            
-            transform.parent = null;
-            DontDestroyOnLoad(gameObject);
+            if (dontDestroyOnLoad)
+            {
+                transform.parent = null;
+                DontDestroyOnLoad(gameObject);
+            }
         }
     }
 }

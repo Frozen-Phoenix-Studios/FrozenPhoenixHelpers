@@ -7,7 +7,13 @@
 -Organize utility scripts
 -Separate out abstract classes
 
-## AudioData fixes [0.0.9] 2023-10-02 - Added a rotation property to spawnpoints to help create more readable code
+## MonoSingleton changes [0.0.10] 2023-10-16 - Modified the destroyOnLoad variable default to destorying objects on load
+### Modified
+-Utility Scripts
+    --MonoSingleton
+        ---Changed destoryOnLoad variable to dontDestroyOnLoad so objects default to destroyingOnLoad
+
+## SpawnPoint changes [0.0.9] 2023-10-02 - Added a rotation property to spawnpoints to help create more readable code
 ### Modified
 -Components
     --SpawnPoint
