@@ -7,6 +7,13 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+
+## GroundCheck2D changes [0.0.11] 2023-10-16 - Modified the GroundCheck script to use gizmos instead of debug draw lines
+### Modified
+-Components
+    --GroundCheck2D
+        ---Added bool "showGizmos", added a gizmo to draw lines and change colour if object is hit. Removed the debug drawing from the runtime methods
+
 ## MonoSingleton changes [0.0.10] 2023-10-16 - Modified the destroyOnLoad variable default to destorying objects on load
 ### Modified
 -Utility Scripts

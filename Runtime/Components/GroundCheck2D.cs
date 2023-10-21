@@ -1,4 +1,4 @@
-using FrozenPhoenix.DataStructures;
+
 using UnityEngine;
 
 namespace FrozenPhoenix.Components
@@ -6,7 +6,8 @@ namespace FrozenPhoenix.Components
     public class GroundCheck2D : MonoBehaviour
     {
         public bool IsGrounded { get; private set; }
-
+        
+        [SerializeField] private bool showGizmos;
         [SerializeField] private Transform[] groundSensors;
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private float maxCheckDistance = 0.2f;
@@ -24,11 +25,7 @@ namespace FrozenPhoenix.Components
 
             hit = Physics2D.Raycast(position, forward, maxCheckDistance, groundLayer);
 
-            Debug.DrawRay(position, forward * maxCheckDistance, Color.green);
-
             bool didHit = hit.collider != null;
-
-            Debug.DrawRay(position, forward * maxCheckDistance, didHit ? Color.green : Color.red);
 
             return didHit;
         }
@@ -46,6 +43,23 @@ namespace FrozenPhoenix.Components
             }
 
             return grounded;
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (!showGizmos) return;
+            
+            foreach (var sensor in groundSensors)
+            {
+                var position = sensor.position;
+                var forward = Vector2.down;
+                var didHit = RaycastFromSensor(sensor);
+                
+                Gizmos.color = didHit ? Color.green : Color.red;
+
+                // Draw the ray
+                Gizmos.DrawRay(position, forward * maxCheckDistance);
+            }
         }
     }
 }
