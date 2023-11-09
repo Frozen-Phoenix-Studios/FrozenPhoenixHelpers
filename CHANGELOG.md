@@ -7,6 +7,12 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## MonoSingleton changes [0.0.12] 2023-11-09 - Removed requirement for component check component to derive from monobehaviour
+### Modified
+-Utility Scripts
+    --MonoSingleton
+        ---Removed monobehaviour reqirement from CheckAndAssignComponent functions
+
 
 ## GroundCheck2D changes [0.0.11] 2023-10-16 - Modified the GroundCheck script to use gizmos instead of debug draw lines
 ### Modified

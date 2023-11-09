@@ -57,7 +57,6 @@ namespace FrozenPhoenix.Components
                 
                 Gizmos.color = didHit ? Color.green : Color.red;
 
-                // Draw the ray
                 Gizmos.DrawRay(position, forward * maxCheckDistance);
             }
         }

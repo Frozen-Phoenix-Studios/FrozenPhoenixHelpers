@@ -82,7 +82,6 @@ namespace FrozenPhoenix.Utilities
         }
 
         public static void CheckAndAssignComponent<T>(ref List<T> componentToCheck, GameObject objectRequesting, bool throwError = true)
-            where T : MonoBehaviour
         {
             var component = objectRequesting.GetComponents<T>();
             if (component == null)
@@ -97,7 +96,6 @@ namespace FrozenPhoenix.Utilities
         }
 
         public static void CheckAndAssignComponent<T>(ref T[] componentToCheck, GameObject objectRequesting, bool throwError = true)
-            where T : MonoBehaviour
         {
             var component = objectRequesting.GetComponents<T>();
             if (component == null)
@@ -112,7 +110,6 @@ namespace FrozenPhoenix.Utilities
         }
         
         public static void CheckAndAssignComponentInParent<T>(ref T componentToCheck, GameObject objectRequesting, bool throwError = true)
-            where T : MonoBehaviour
         {
             var component = objectRequesting.GetComponentInParent<T>();
             if (component == null)
@@ -127,7 +124,6 @@ namespace FrozenPhoenix.Utilities
         }
 
         public static void FindAndAssignComponent<T>(ref T componentToFind, GameObject objectRequesting, bool throwError = true)
-            where T : MonoBehaviour
         {
             var component = GameObject.FindObjectOfType<T>();
             if (component == null)
