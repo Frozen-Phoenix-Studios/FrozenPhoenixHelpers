@@ -7,11 +7,19 @@
 -Organize utility scripts
 -Separate out abstract classes
 
-## MonoSingleton changes [0.0.12] 2023-11-09 - Removed requirement for component check component to derive from monobehaviour
+## HelperMethods hotfix [0.0.13] 2023-11-09 - Fixed issue where FindAndAssignComponent was giving compile error
 ### Modified
 -Utility Scripts
-    --MonoSingleton
-        ---Removed monobehaviour reqirement from CheckAndAssignComponent functions
+    --HelperMethods
+        ---Added monobehaviour requirement to FindAndAssignComponent function as T needed to derive monobehaviour
+-Change log
+    ---Corrected v0.0.12 as it was stating changes were to monosingelton instead of helper methods
+
+## HelperMethods changes [0.0.12] 2023-11-09 - Removed requirement for component check component to derive from monobehaviour
+### Modified
+-Utility Scripts
+    --HelperMethods
+        ---Removed monobehaviour requirement from CheckAndAssignComponent functions
 
 
 ## GroundCheck2D changes [0.0.11] 2023-10-16 - Modified the GroundCheck script to use gizmos instead of debug draw lines

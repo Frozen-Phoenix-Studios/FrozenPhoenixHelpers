@@ -124,6 +124,7 @@ namespace FrozenPhoenix.Utilities
         }
 
         public static void FindAndAssignComponent<T>(ref T componentToFind, GameObject objectRequesting, bool throwError = true)
+            where T : MonoBehaviour
         {
             var component = GameObject.FindObjectOfType<T>();
             if (component == null)
