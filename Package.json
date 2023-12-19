@@ -1,11 +1,10 @@
 {
     "name":"com.frozenphoenix.frozenphoenixhelpers",
-    "version": "0.0.13",
+    "version": "0.0.13-beta.1",
     "displayName": "Frozen Phoenix Helpers",
     "description": "A collection of helper scripts and components to help streamline Unity game development",
-    "unity": "2021.3",
+    "unity": "2022.2",
     "dependencies": {
-        "com.unity.textmeshpro": "3.0.4"
     },
     "author":{
         "name": "Luke Duckett",

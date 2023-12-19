@@ -7,6 +7,11 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## Unity 2023.2 support [0.0.13-beta.1] 2023-12-19 - Added branch for 2023.2.x support
+### Modified
+-Package.json
+    --Removed TMPro dependancy as it is installed by default in Unity 2023.2.x versions
+
 ## HelperMethods hotfix [0.0.13] 2023-11-09 - Fixed issue where FindAndAssignComponent was giving compile error
 ### Modified
 -Utility Scripts
