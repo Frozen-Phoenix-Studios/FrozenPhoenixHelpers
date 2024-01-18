@@ -7,6 +7,20 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## Animation Controller and Collision Sensor changes [0.0.14] 2024-01-18 - Modified FPSAnimationControllerBase to be more friendly with child classes
+### Added
+-Components
+    --CollisionSensor3D
+        ---Added a 3D version of the collision sensor
+### Modified
+-Components
+    --FPSAnimationControllerBase
+        ---Modifed animation string hashes from private to protected
+        ---Added a set speed function to enable direct control of the 
+-Change log
+    ---Corrected v0.0.12 as it was stating changes were to monosingelton instead of helper methods
+
+
 ## HelperMethods hotfix [0.0.13] 2023-11-09 - Fixed issue where FindAndAssignComponent was giving compile error
 ### Modified
 -Utility Scripts

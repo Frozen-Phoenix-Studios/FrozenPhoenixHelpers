@@ -18,27 +18,26 @@ namespace FrozenPhoenix.Components
        [SerializeField] protected Animator _anim;
 
         //moving
-        private static readonly int Speed = Animator.StringToHash("Speed");
-        private static readonly int Walking = Animator.StringToHash("Walking");
-        private static readonly int Idle = Animator.StringToHash("Idle");
+        protected static readonly int Speed = Animator.StringToHash("Speed");
+        protected static readonly int Walking = Animator.StringToHash("Walking");
+        protected static readonly int Idle = Animator.StringToHash("Idle");
         
         //attacking
-        private static readonly int Attack = Animator.StringToHash("Attack");
-        private static readonly int Shoot = Animator.StringToHash("Shoot");
+        protected static readonly int Attack = Animator.StringToHash("Attack");
+        protected static readonly int Shoot = Animator.StringToHash("Shoot");
         
         //damage
-        private static readonly int Damaged = Animator.StringToHash("Damaged");
-        private static readonly int Dead = Animator.StringToHash("Dead");
+        protected static readonly int Damaged = Animator.StringToHash("Damaged");
+        protected static readonly int Dead = Animator.StringToHash("Dead");
 
-        
         //jumping
-        private static readonly int Jumping = Animator.StringToHash("Jumping");
-        private static readonly int Falling = Animator.StringToHash("Falling");
-        private static readonly int Landing = Animator.StringToHash("Landing");
+        protected static readonly int Jumping = Animator.StringToHash("Jumping");
+        protected static readonly int Falling = Animator.StringToHash("Falling");
+        protected static readonly int Landing = Animator.StringToHash("Landing");
 
-        private const float IDLE_SPEED = 0;
-        private const float WALK_SPEED = 0.5f;
-        private const float RUN_SPEED = 1f;
+        [SerializeField] protected float idleSpeed = 0;
+        [SerializeField] protected  float walkSpeed = 0.5f;
+        [SerializeField] protected  float runSpeed = 1f;
 
         public void Awake()
         {
@@ -53,13 +52,16 @@ namespace FrozenPhoenix.Components
 
         //moving
             //floats
-            public void SetToIdleSpeed() => _anim.SetFloat(Speed, IDLE_SPEED);
-            public void SetToWalkSpeed() => _anim.SetFloat(Speed, WALK_SPEED);
+            public void SetToIdleSpeed() => _anim.SetFloat(Speed, idleSpeed);
+            public void SetToWalkSpeed() => _anim.SetFloat(Speed, walkSpeed);
+            
+            public void SetSpeed(float speed) => _anim.SetFloat(Speed, speed);
  
             //bools
             public void ToggleWalking(bool isWalking) => _anim.SetBool(Walking, isWalking);
 
             public void ToggleIdle(bool isIdle) => _anim.SetBool(Idle, isIdle);
+            
             
             //todo: might need a method which takes a float;
 
