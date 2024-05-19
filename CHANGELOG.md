@@ -7,7 +7,15 @@
 -Organize utility scripts
 -Separate out abstract classes
 
-## Animation Controller and Collision Sensor changes [0.0.14] 2024-01-18 - Modified FPSAnimationControllerBase to be more friendly with child classes
+## UTC Conversion method fixes [0.0.15] 2024-05-19 - Modified UTC to date conversion method to handle local time zones by default which prvents an issue where date is converted to UTC then back to Date
+### Modified
+-Utility Scripts
+    --Conversion Methods
+        ---Added bool convert to local time to ConvertDateFromUTC method and set it to true by default
+--Readme
+    --Added meta file to git
+
+## Animation Controller and Collision Sensor changes [0.0.14] 2024-01-18 - Modified FPSAnimationControllerBase to be more friendly with child classes and added collision sensor 3D
 ### Added
 -Components
     --CollisionSensor3D

@@ -37,9 +37,16 @@ namespace FrozenPhoenix.Utilities
         /// </summary>
         /// <param name="data"></param>
         /// <returns>DateTime structured {year, month, day}</returns>
-        public static DateTime ConvertDateFromUTC(long data)
+        public static DateTime ConvertDateFromUTC(long data, bool convertToLocalTime = true)
         {
-            return DateTime.FromFileTimeUtc(data);
+            var newDate = DateTime.FromFileTimeUtc(data);
+            if (convertToLocalTime)
+            {
+                newDate = newDate.ToLocalTime();
+            }
+
+            // return DateTime.FromFileTimeUtc(data);
+            return newDate;
         }
 
         /// <summary>
@@ -53,4 +60,3 @@ namespace FrozenPhoenix.Utilities
         }
     }
 }
-
