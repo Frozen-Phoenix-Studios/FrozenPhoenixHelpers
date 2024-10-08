@@ -7,6 +7,12 @@
 -Organize utility scripts
 -Separate out abstract classes
 
+## Text Typewriter effect callbacks [0.0.16] 2024-10-09 - Added override for the Text Typewriter effect containing OnComplete Action callback
+### Modified
+-Utility Scripts
+    --UI Utilities
+        ---Added new override function for TextTypewrite effect with on complete action callback
+        
 ## UTC Conversion method fixes [0.0.15] 2024-05-19 - Modified UTC to date conversion method to handle local time zones by default which prvents an issue where date is converted to UTC then back to Date
 ### Modified
 -Utility Scripts

@@ -334,6 +334,7 @@ namespace FrozenPhoenix.Utilities.UI
                 }
             }
         }
+        
         public static IEnumerator TextTypeWriteEffect(TMP_Text textObject, string textToType, float typeSpeedPerLetter)
         {
             textObject.gameObject.SetActive(true);
@@ -347,7 +348,22 @@ namespace FrozenPhoenix.Utilities.UI
                 }
             }
         }
-
+        
+        public static IEnumerator TextTypeWriteEffect(TMP_Text textObject, string textToType, float typeSpeedPerLetter, Action onCompleteCallback)
+        {
+            textObject.gameObject.SetActive(true);
+            for (int i = 0; i < textToType.Length; i++)
+            {
+                textObject.SetText(textToType.Substring(0, i + 1));
+                var currentCharacter = textToType.Substring(i, 1);
+                if (currentCharacter != " ")
+                {
+                    yield return new WaitForSeconds(typeSpeedPerLetter);
+                }
+            }
+            
+            onCompleteCallback?.Invoke();
+        }
 
         public static IEnumerator CountUpText(TMP_Text textObject, String stringToType, float typingSpeed,
             int numberCountingTo)

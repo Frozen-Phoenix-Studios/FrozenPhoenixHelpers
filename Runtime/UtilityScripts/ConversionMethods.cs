@@ -33,9 +33,11 @@ namespace FrozenPhoenix.Utilities
         }
 
         /// <summary>
-        /// Convert UTC (seconds since 12:00 01-01-1601) to a DateTime
+        /// Convert UTC (seconds since 12:00 01-01-1601) to a DateTime. Converting to local time helps
+        /// prvent issue where converting to UTC then back provides a different time due to time z
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">UTC time formatted as a long</param>
+        /// <param name="convertToLocalTime">Convert the UTC time to the local timezone</param>
         /// <returns>DateTime structured {year, month, day}</returns>
         public static DateTime ConvertDateFromUTC(long data, bool convertToLocalTime = true)
         {
