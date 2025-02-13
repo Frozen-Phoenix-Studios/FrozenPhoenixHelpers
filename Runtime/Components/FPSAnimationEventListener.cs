@@ -8,6 +8,7 @@ namespace FrozenPhoenix.Components
     {
         //attacks
         public event Action OnAttackStart;
+        public event Action OnAttackDamageTrigger;
         public event Action OnAttackComplete;
 
         //damage
@@ -19,6 +20,8 @@ namespace FrozenPhoenix.Components
         public event Action OnDeathComplete;
 
         public void CallOnAttackStart() => OnAttackStart?.Invoke();
+        
+        public void CallOnAttackDamageTrigger() => OnAttackDamageTrigger?.Invoke();
 
         public void CallOnAttackComplete() => OnAttackComplete?.Invoke();
 
